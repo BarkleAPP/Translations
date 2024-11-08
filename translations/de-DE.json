@@ -167,6 +167,7 @@
   "proxyAccountDescription": "Ein Proxy-Account ist ein Account, der unter bestimmten Bedingungen als Remote-Follower für Benutzer agiert. Wenn zum Beispiel ein Benutzer einen Remote-Benutzer zur Liste hinzufügt, werden die Aktivitäten des Remote-Benutzers nicht an die Instanz übermittelt, wenn kein lokaler Benutzer diesem folgt, daher folgt stattdessen der Proxy-Account.",
   "host": "Host",
   "shareAsMessage": "Als DM teilen",
+  "poweredBy": "Bereitgestellt von: ",
   "selectUser": "Benutzer auswählen",
   "recipient": "Empfänger",
   "annotation": "Kommentare",
@@ -246,6 +247,16 @@
   "removeAreYouSure": "Möchtest du \"{x}\" wirklich entfernen?",
   "deleteAreYouSure": "Möchtest du \"{x}\" wirklich löschen?",
   "resetAreYouSure": "Wirklich zurücksetzen?",
+  "resetAllDecos": "Bist du sicher, dass du alle Dekorationen entfernen möchtest?",
+  "avatarDecorations": "Profil-Dekorationen",
+  "addDeco": "Dekoration hinzufügen",
+  "credit": "Guthaben",
+  "isPlus": "Ist Plus",
+  "plusOnly": "Nur Plus",
+  "detachAll": "Alle lösen",
+  "angle": "Winkel",
+  "position": "Position",
+  "flip": "Spiegeln",
   "saved": "Gespeichert",
   "messaging": "Chat",
   "upload": "Hochladen",
@@ -273,6 +284,7 @@
   "birthday": "Geburtstag",
   "yearsOld": "{age} Jahre alt",
   "registeredDate": "Beigetreten am",
+  "earlyUser": "Early User",
   "location": "Standort",
   "theme": "Designs",
   "themeForLightMode": "Design für den hellen Modus",
@@ -932,6 +944,54 @@
   "reloading": "Wird neu geladen",
   "releaseToReload": "Zum Neuladen loslassen",
   "pullDownToReload": "Zum Neuladen nach unten ziehen",
+  "staffConfirm": "Bist du sicher, dass du dieses Konto als Mitarbeiter markieren möchtest?",
+  "unstaffConfirm": "Bist du sicher, dass du dieses Konto als Mitarbeiter entfernen möchtest?",
+  " plusConfirm": "Bist du sicher, dass du diesem Konto Plus geben möchtest?",
+  "unsplusConfirm": "Bist du sicher, dass du Plus von diesem Konto entfernen möchtest?",
+  "translatorConfirm": "Bist du sicher, dass du dieses Konto als Übersetzer markieren möchtest?",
+  "untranslatorConfirm": "Bist du sicher, dass du dieses Konto als Übersetzer entfernen möchtest?",
+  "verifyConfirm": "Bist du sicher, dass du dieses Konto verifizieren möchtest?",
+  "unverifyConfirm": "Bist du sicher, dass du die Verifizierung dieses Kontos aufheben möchtest?",
+  "staff": "Mitarbeiter",
+  "verified": "Verifiziert",
+  "plus_make": "Plus",
+  "translator_make": "Übersetzer",
+  "renderProfileCSS": "Profil-CSS rendern",
+  "massEmail": "Massen-E-Mail",
+  "useHtmlContent": "HTML verwenden",
+  "body": "Inhalt",
+  "subject": "Betreff",
+  "sendToAllUsers": "An alle Nutzer senden",
+  "userAttributes": "Benutzerrollen",
+  "plus": "Plus",
+  "translator": "Übersetzer",
+  "silenced": "Stummgeschaltet",
+  "select": "Auswählen",
+  "barks": "Beller",
+  "landingDescription": "Barkle's Funktionen",
+  "barksDescription": "Beller sind unsere Bezeichnung für Beiträge hier auf Barkle. Sie können bis zu 3000 Zeichen lang sein und können genutzt werden, um dich auszudrücken oder es einfach rauszubellen!",
+  "channels": "Kanäle",
+  "channelsDescription": "Kanäle sind von Nutzern erstellte/verwaltete Gemeinschaften für bestimmte Themen, Fandoms und mehr! Dies ermöglicht es dir, dich mit Gleichgesinnten zu verbinden!",
+  "custom": "Anpassung",
+  "customDescription": "Barkle ermöglicht es dir, fast jeden Aspekt deiner Erfahrung anzupassen. Mit benutzerdefinierten Designs, CSS und Hüten kannst du Barkle zu deinem eigenen machen.",
+  "genAlt": "Zweitkonto registrieren",
+  "makeAlt": "Zweitkonto erstellen",
+  "altAccountCreated": "Dein Zweitkonto wurde erstellt!",
+  "creatingAlt": "Erstelle Zweitkonto",
+  "createAlt": "Zweitkonto erstellt",
+  "profileCustomization": "Passe dein Profil an!",
+  "previewDescription": "Beschreibungsvorschau",
+  "blur": "Unschärfe",
+  "opacity": "Transparenz",
+  "bannerSettings": "Banner-Einstellungen",
+  "profileSettings": "Profil-Einstellungen",
+  "cornerRadius": "Eckenradius",
+  "avatarSize": "Avatar-Größe",
+  "textSettings": "Text-Einstellungen",
+  "nameSize": "Namensgröße",
+  "nameColor": "Namensfarbe",
+  "bioSize": "Bio-Größe",
+  "reset": "Zurücksetzen"
   "_sensitiveMediaDetection": {
     "description": "Reduziert den Aufwand der Servermoderation durch automatische Erkennung von NSFW-Medien mittels maschinellen Lernens. Dies wird die Serverlast leicht erhöhen.",
     "sensitivity": "Erkennungsempfindlichkeit",
@@ -1115,6 +1175,17 @@
     "notesCount": "{n} Barks",
     "nameOnly": "Nur Name",
     "nameAndDescription": "Name und Beschreibung"
+    "archive": "Kanal archivieren",
+  "unarchive": "Kanal wiederherstellen",
+  "banUser": "Mitglied sperren",
+  "unban": "Mitglied entsperren",
+  "addModerator": "Moderator hinzufügen",
+  "removeModerator": "Moderator entfernen",
+  "addAdmin": "Admin hinzufügen",
+  "removeAdmin": "Admin entfernen",
+  "bans": "Sperrungen",
+  "moderators": "Moderatoren",
+  "admins": "Admins"
 },
 "_messaging": {
     "dms": "Privat",
@@ -1359,379 +1430,379 @@
     "aiscript": "AiScript-Konsole",
     "aichan": "Ai"
   },
-  "_cw": {
-     "hide": "Hide",
-     "show": "Show content",
-     "chars": "{count} characters",
-     "files": "{count} file(s)"
-  },
-  "_poll": {
-     "noOnlyOneChoice": "At least two choices are needed",
-     "choiceN": "Choice {n}",
-     "noMore": "You cannot add more choices",
-     "canMultipleVote": "Allow selecting multiple choices",
-     "expiration": "End poll",
-     "infinite": "Never",
-     "at": "End at...",
-     "after": "End after...",
-     "deadlineDate": "End date",
-     "deadlineTime": "Time",
-     "duration": "Duration",
-     "votesCount": "{n} votes",
-     "totalVotes": "{n} votes in total",
-     "vote": "Vote",
-     "showResult": "View results",
-     "voted": "Voted",
-     "closed": "Ended",
-     "remainingDays": "{d} day(s) {h} hour(s) remaining",
-     "remainingHours": "{h} hour(s) {m} minute(s) remaining",
-     "remainingMinutes": "{m} minute(s) {s} second(s) remaining",
-     "remainingSeconds": "{s} second(s) remaining"
-  },
-  "_visibility": {
-     "public": "Public",
-     "publicDescription": "Your bark will be visible for all users",
-     "home": "Home",
-     "homeDescription": "Post to home timeline only",
-     "followers": "Followers",
-     "followersDescription": "Make visible to your followers only",
-     "specified": "Direct",
-     "specifiedDescription": "Make visible for specified users only",
-     "localOnly": "Local only",
-     "localOnlyDescription": "Not visible to remote users"
-  },
-  "_postForm": {
-     "replyPlaceholder": "Reply to this bark...",
-     "quotePlaceholder": "Quote this bark...",
-     "channelPlaceholder": "Post to a channel...",
-     "_placeholders": {
-        "a": "What are you up to?",
-        "b": "What's happening around you?",
-        "c": "What's on your mind?",
-        "d": "What do you want to say?",
-        "e": "Start writing...",
-        "f": "Waiting for you to write..."
-     }
-  },
-  "_profile": {
-     "name": "Name",
-     "username": "Username",
-     "description": "Bio",
-     "youCanIncludeHashtags": "You can also include hashtags in your bio.",
-     "metadata": "Additional Information",
-     "metadataEdit": "Edit additional Information",
-     "metadataDescription": "Using these, you can display additional information fields in your profile.",
-     "metadataLabel": "Label",
-     "metadataContent": "Content",
-     "changeAvatar": "Change avatar",
-     "changeBanner": "Change banner",
-     "css": "Custom profile CSS",
-     "cssDoc": "You can use CSS to customize your profile. Please note that this is not a full-fledged CSS editor, so you may not be able to use some CSS features."
-  },
-  "_exportOrImport": {
-     "allNotes": "All barks",
-     "followingList": "Followed users",
-     "muteList": "Muted users",
-     "blockingList": "Blocked users",
-     "userLists": "User lists",
-     "excludeMutingUsers": "Exclude muted users",
-     "excludeInactiveUsers": "Exclude inactive users"
-  },
-  "_charts": {
-     "federation": "Federation",
-     "apRequest": "Requests",
-     "usersIncDec": "Difference in the number of users",
-     "usersTotal": "Total number of users",
-     "activeUsers": "Active users",
-     "notesIncDec": "Difference in the number of barks",
-     "localNotesIncDec": "Difference in the number of local barks",
-     "remoteNotesIncDec": "Difference in the number of remote barks",
-     "notesTotal": "Total number of barks",
-     "filesIncDec": "Difference in the number of files",
-     "filesTotal": "Total number of files",
-     "storageUsageIncDec": "Difference in storage usage",
-     "storageUsageTotal": "Total storage usage"
-  },
-  "_instanceCharts": {
-     "requests": "Requests",
-     "users": "Difference in the number of users",
-     "usersTotal": "Cumulative number of users",
-     "notes": "Difference in the number of barks",
-     "notesTotal": "Cumulative number of barks",
-     "ff": "Difference in the number of followed users / followers ",
-     "ffTotal": "Cumulative number of followed users / followers",
-     "cacheSize": "Difference in cache size",
-     "cacheSizeTotal": "Cumulative total cache size",
-     "files": "Difference in the number of files",
-     "filesTotal": "Cumulative number of files"
-  },
-  "_timelines": {
-     "home": "Following",
-     "local": "Local",
-     "recommended": "Recommended",
-     "social": "Social",
-     "global": "Global"
-  },
-  "_pages": {
-     "newPage": "Create a new Page",
-     "editPage": "Edit this Page",
-     "readPage": "Viewing this Page's source",
-     "created": "Page successfully created",
-     "updated": "Page successfully edited",
-     "deleted": "Page successfully deleted",
-     "pageSetting": "Page settings",
-     "nameAlreadyExists": "The specified Page URL already exists",
-     "invalidNameTitle": "The specified Page URL is invalid",
-     "invalidNameText": "Make sure the Page title is not empty",
-     "editThisPage": "Edit this Page",
-     "viewSource": "View source",
-     "viewPage": "View your Pages",
-     "like": "Like",
-     "unlike": "Remove like",
-     "my": "My Pages",
-     "liked": "Liked Pages",
-     "featured": "Popular",
-     "inspector": "Inspector",
-     "contents": "Content",
-     "content": "Page block",
-     "variables": "Variables",
-     "title": "Title",
-     "url": "Page URL",
-     "summary": "Page summary",
-     "alignCenter": "Center elements",
-     "hideTitleWhenPinned": "Hide Page title when pinned to profile",
-     "font": "Font",
-     "fontSerif": "Serif",
-     "fontSansSerif": "Sans Serif",
-     "eyeCatchingImageSet": "Set thumbnail",
-     "eyeCatchingImageRemove": "Delete thumbnail",
-     "chooseBlock": "Add a block",
-     "selectType": "Select a type",
-     "enterVariableName": "Enter a variable name",
-     "variableNameIsAlreadyUsed": "This variable name is already in use",
-     "contentBlocks": "Content",
-     "inputBlocks": "Input",
-     "specialBlocks": "Special",
-     "blocks": {
-        "text": "Text",
-        "textarea": "Text area",
-        "section": "Section",
-        "image": "Images",
-        "button": "Button",
-        "if": "If",
-        "_if": {
-           "variable": "Variable"
-        },
-        "post": "Posting form",
-        "_post": {
-           "text": "Content",
-           "attachCanvasImage": "Attach canvas image",
-           "canvasId": "Canvas ID"
-        },
-        "textInput": "Text input",
-        "_textInput": {
-           "name": "Variable name",
-           "text": "Title",
-           "default": "Default value"
-        },
-        "textareaInput": "Multiline text input",
-        "_textareaInput": {
-           "name": "Variable name",
-           "text": "Title",
-           "default": "Default value"
-        },
-        "numberInput": "Numeric input",
-        "_numberInput": {
-           "name": "Variable name",
-           "text": "Title",
-           "default": "Default value"
-        },
-        "canvas": "Canvas",
-        "_canvas": {
-           "id": "Canvas ID",
-           "width": "Width",
-           "height": "Height"
-        },
-        "note": "Embedded bark",
-        "_note": {
-           "id": "Bark ID",
-           "idDescription": "You can alternatively paste the bark URL here.",
-           "detailed": "Detailed view"
-        },
-        "switch": "Switch",
-        "_switch": {
-           "name": "Variable name",
-           "text": "Title",
-           "default": "Default value"
-        },
-        "counter": "Counter",
-        "_counter": {
-           "name": "Variable name",
-           "text": "Title",
-           "inc": "Step"
-        },
-        "_button": {
-           "text": "Title",
-           "colored": "Colored",
-           "action": "Behavior when the button is pressed",
-           "_action": {
-              "dialog": "Show a dialog",
-              "_dialog": {
-                 "content": "Content"
-              },
-              "resetRandom": "Reset the random seed",
-              "pushEvent": "Send an event",
-              "_pushEvent": {
-                 "event": "Event name",
-                 "message": "Message to display when activated",
-                 "variable": "Variable to send",
-                 "no-variable": "None"
-              },
-              "callAiScript": "Invoke AiScript",
-              "_callAiScript": {
-                 "functionName": "Function name"
-              }
-           }
-        },
-        "radioButton": "Choice",
-        "_radioButton": {
-           "name": "Variable name",
-           "title": "Title",
-           "values": "List of choices separated by line breaks",
-           "default": "Default value"
-        }
-     },
-     "script": {
-        "categories": {
-           "flow": "Flow control",
-           "logical": "Logical operation",
-           "operation": "Computation",
-           "comparison": "Comparison",
-           "random": "Random",
-           "value": "Values",
-           "fn": "Functions",
-           "text": "Text operations",
-           "convert": "Transformations",
-           "list": "Lists"
-        },
-        "blocks": {
-           "text": "Text",
-           "multiLineText": "Text (multiline)",
-           "textList": "Text list",
-           "_textList": {
-              "info": "Separate each entry with a line break"
-           },
-           "strLen": "Text length",
-           "_strLen": {
-              "arg1": "Text"
-           },
-           "strPick": "Extract string",
-           "_strPick": {
-              "arg1": "Text",
-              "arg2": "String location"
-           },
-           "strReplace": "Replacement string",
-           "_strReplace": {
-              "arg1": "Text",
-              "arg2": "Text to be replaced",
-              "arg3": "Replace with"
-           },
-           "strReverse": "Flip text",
-           "_strReverse": {
-              "arg1": "Text"
-           },
-           "join": "Text concatenation",
-           "_join": {
-              "arg1": "Lists",
-              "arg2": "Separator"
-           },
-           "add": "Add",
-           "_add": {
-              "arg1": "A",
-              "arg2": "B"
-           },
-           "subtract": "Subtract",
-           "_subtract": {
-              "arg1": "A",
-              "arg2": "B"
-           },
-           "multiply": "Multiply",
-           "_multiply": {
-              "arg1": "A",
-              "arg2": "B"
-           },
-           "divide": "Divide",
-           "_divide": {
-              "arg1": "A",
-              "arg2": "B"
-           },
-           "mod": "Remainder",
-           "_mod": {
-              "arg1": "A",
-              "arg2": "B"
-           },
-           "round": "Decimal rounding",
-           "_round": {
-              "arg1": "Number"
-           },
-           "eq": "A and B are equal",
-           "_eq": {
-              "arg1": "A",
-              "arg2": "B"
-           },
-           "notEq": "A and B are different",
-           "_notEq": {
-              "arg1": "A",
-              "arg2": "B"
-           },
-           "and": "A AND B",
-           "_and": {
-              "arg1": "A",
-              "arg2": "B"
-           },
-           "or": "A OR B",
-           "_or": {
-              "arg1": "A",
-              "arg2": "B"
-           },
-           "lt": "< A is less than B",
-           "_lt": {
-              "arg1": "A",
-              "arg2": "B"
-           },
-           "gt": "> A is larger than B",
-           "_gt": {
-              "arg1": "A",
-              "arg2": "B"
-           },
-           "ltEq": "<= A is less than or equal to B",
-           "_ltEq": {
-              "arg1": "A",
-              "arg2": "B"
-           },
-           "gtEq": ">= A is greater than or equal to B",
-           "_gtEq": {
-              "arg1": "A",
-              "arg2": "B"
-           },
-           "if": "Branch",
-           "_if": {
-              "arg1": "If",
-              "arg2": "Then",
-              "arg3": "Else"
-           },
-           "not": "NOT",
-           "_not": {
-              "arg1": "NOT"
-           },
-           "random": "Random",
-           "_random": {
-              "arg1": "Probability"
-           },
-           "rannum": "Random number",
-           "_rannum": {
-              "arg1": "Minimum value",
-              "arg2": "Maximum value"
+"_cw": {
+   "hide": "Verbergen",
+   "show": "Inhalt anzeigen",
+   "chars": "{count} Zeichen",
+   "files": "{count} Datei(en)"
+},
+"_poll": {
+   "noOnlyOneChoice": "Mindestens zwei Auswahlmöglichkeiten sind erforderlich",
+   "choiceN": "Auswahl {n}",
+   "noMore": "Es können keine weiteren Auswahlmöglichkeiten hinzugefügt werden",
+   "canMultipleVote": "Mehrfachauswahl zulassen",
+   "expiration": "Umfrage beenden",
+   "infinite": "Niemals",
+   "at": "Endet um...",
+   "after": "Endet nach...",
+   "deadlineDate": "Enddatum",
+   "deadlineTime": "Uhrzeit",
+   "duration": "Dauer",
+   "votesCount": "{n} Stimmen",
+   "totalVotes": "{n} Gesamtstimmen",
+   "vote": "Abstimmen",
+   "showResult": "Ergebnisse anzeigen",
+   "voted": "Abgestimmt",
+   "closed": "Beendet",
+   "remainingDays": "{d} Tag(e) {h} Stunde(n) verbleibend",
+   "remainingHours": "{h} Stunde(n) {m} Minute(n) verbleibend",
+   "remainingMinutes": "{m} Minute(n) {s} Sekunde(n) verbleibend",
+   "remainingSeconds": "{s} Sekunde(n) verbleibend"
+},
+"_visibility": {
+   "public": "Öffentlich",
+   "publicDescription": "Dein Beitrag wird für alle Benutzer sichtbar sein",
+   "home": "Startseite",
+   "homeDescription": "Nur auf der Startseite posten",
+   "followers": "Follower",
+   "followersDescription": "Nur für deine Follower sichtbar machen",
+   "specified": "Direkt",
+   "specifiedDescription": "Nur für bestimmte Benutzer sichtbar machen",
+   "localOnly": "Nur lokal",
+   "localOnlyDescription": "Für entfernte Benutzer nicht sichtbar"
+},
+"_postForm": {
+   "replyPlaceholder": "Antwort auf diesen Beitrag...",
+   "quotePlaceholder": "Zitat dieses Beitrags...",
+   "channelPlaceholder": "In einem Kanal posten...",
+   "_placeholders": {
+      "a": "Woran denkst du?",
+      "b": "Was passiert um dich herum?",
+      "c": "Was hast du auf dem Herzen?",
+      "d": "Was möchtest du sagen?",
+      "e": "Schreib los...",
+      "f": "Warte darauf, dass du schreibst..."
+   }
+},
+"_profile": {
+   "name": "Name",
+   "username": "Benutzername",
+   "description": "Bio",
+   "youCanIncludeHashtags": "Du kannst auch Hashtags in deine Bio einfügen.",
+   "metadata": "Zusätzliche Informationen",
+   "metadataEdit": "Zusätzliche Informationen bearbeiten",
+   "metadataDescription": "Damit kannst du zusätzliche Informationsfelder in deinem Profil anzeigen.",
+   "metadataLabel": "Bezeichnung",
+   "metadataContent": "Inhalt",
+   "changeAvatar": "Avatar ändern",
+   "changeBanner": "Banner ändern",
+   "css": "Benutzerdefiniertes Profil-CSS",
+   "cssDoc": "Du kannst CSS verwenden, um dein Profil anzupassen. Bitte beachte, dass dies kein vollwertiger CSS-Editor ist, sodass einige CSS-Funktionen möglicherweise nicht verwendet werden können."
+},
+"_exportOrImport": {
+   "allNotes": "Alle Beiträge",
+   "followingList": "Gefolgte Benutzer",
+   "muteList": "Stummgeschaltete Benutzer",
+   "blockingList": "Blockierte Benutzer",
+   "userLists": "Benutzerlisten",
+   "excludeMutingUsers": "Stummgeschaltete Benutzer ausschließen",
+   "excludeInactiveUsers": "Inaktive Benutzer ausschließen"
+},
+"_charts": {
+   "federation": "Föderation",
+   "apRequest": "Anfragen",
+   "usersIncDec": "Differenz in der Anzahl der Benutzer",
+   "usersTotal": "Gesamtzahl der Benutzer",
+   "activeUsers": "Aktive Benutzer",
+   "notesIncDec": "Differenz in der Anzahl der Beiträge",
+   "localNotesIncDec": "Differenz in der Anzahl lokaler Beiträge",
+   "remoteNotesIncDec": "Differenz in der Anzahl entfernter Beiträge",
+   "notesTotal": "Gesamtzahl der Beiträge",
+   "filesIncDec": "Differenz in der Anzahl der Dateien",
+   "filesTotal": "Gesamtzahl der Dateien",
+   "storageUsageIncDec": "Differenz im Speicherverbrauch",
+   "storageUsageTotal": "Gesamter Speicherverbrauch"
+},
+"_instanceCharts": {
+   "requests": "Anfragen",
+   "users": "Differenz in der Anzahl der Benutzer",
+   "usersTotal": "Kumulative Benutzeranzahl",
+   "notes": "Differenz in der Anzahl der Beiträge",
+   "notesTotal": "Kumulative Beitragsanzahl",
+   "ff": "Differenz in der Anzahl gefolgter Benutzer/Follower",
+   "ffTotal": "Kumulative Anzahl gefolgter Benutzer/Follower",
+   "cacheSize": "Differenz in der Cache-Größe",
+   "cacheSizeTotal": "Kumulative Cache-Gesamtgröße",
+   "files": "Differenz in der Anzahl der Dateien",
+   "filesTotal": "Kumulative Dateianzahl"
+},
+"_timelines": {
+   "home": "Folge ich",
+   "local": "Lokal",
+   "recommended": "Empfohlen",
+   "social": "Sozial",
+   "global": "Global"
+},
+"_pages": {
+   "newPage": "Neue Seite erstellen",
+   "editPage": "Diese Seite bearbeiten",
+   "readPage": "Quelltext dieser Seite anzeigen",
+   "created": "Seite erfolgreich erstellt",
+   "updated": "Seite erfolgreich bearbeitet",
+   "deleted": "Seite erfolgreich gelöscht",
+   "pageSetting": "Seiteneinstellungen",
+   "nameAlreadyExists": "Die angegebene Seiten-URL existiert bereits",
+   "invalidNameTitle": "Die angegebene Seiten-URL ist ungültig",
+   "invalidNameText": "Stelle sicher, dass der Seitentitel nicht leer ist",
+   "editThisPage": "Diese Seite bearbeiten",
+   "viewSource": "Quelltext anzeigen",
+   "viewPage": "Deine Seiten anzeigen",
+   "like": "Gefällt mir",
+   "unlike": "Gefällt mir nicht mehr",
+   "my": "Meine Seiten",
+   "liked": "Seiten, die dir gefallen",
+   "featured": "Beliebt",
+   "inspector": "Inspektor",
+   "contents": "Inhalt",
+   "content": "Seitenblock",
+   "variables": "Variablen",
+   "title": "Titel",
+   "url": "Seiten-URL",
+   "summary": "Seitenzusammenfassung",
+   "alignCenter": "Elemente zentrieren",
+   "hideTitleWhenPinned": "Seitentitel ausblenden, wenn im Profil angeheftet",
+   "font": "Schriftart",
+   "fontSerif": "Serif",
+   "fontSansSerif": "Sans Serif",
+   "eyeCatchingImageSet": "Miniatur festlegen",
+   "eyeCatchingImageRemove": "Miniatur löschen",
+   "chooseBlock": "Block hinzufügen",
+   "selectType": "Typ auswählen",
+   "enterVariableName": "Variablennamen eingeben",
+   "variableNameIsAlreadyUsed": "Dieser Variablenname wird bereits verwendet",
+   "contentBlocks": "Inhalt",
+   "inputBlocks": "Eingabe",
+   "specialBlocks": "Spezial",
+   "blocks": {
+"text": "Text",
+"textarea": "Textbereich",
+"section": "Abschnitt",
+"image": "Bilder",
+"button": "Schaltfläche",
+"if": "Wenn",
+"_if": {
+   "variable": "Variable"
+},
+"post": "Posting-Formular",
+"_post": {
+   "text": "Inhalt",
+   "attachCanvasImage": "Leinwandbild anhängen",
+   "canvasId": "Leinwand-ID"
+},
+"textInput": "Texteingabe",
+"_textInput": {
+   "name": "Variablenname",
+   "text": "Titel",
+   "default": "Standardwert"
+},
+"textareaInput": "Mehrzeilige Texteingabe",
+"_textareaInput": {
+   "name": "Variablenname",
+   "text": "Titel",
+   "default": "Standardwert"
+},
+"numberInput": "Numerische Eingabe",
+"_numberInput": {
+   "name": "Variablenname",
+   "text": "Titel",
+   "default": "Standardwert"
+},
+"canvas": "Leinwand",
+"_canvas": {
+   "id": "Leinwand-ID",
+   "width": "Breite",
+   "height": "Höhe"
+},
+"note": "Eingebetteter Beitrag",
+"_note": {
+   "id": "Beitrags-ID",
+   "idDescription": "Alternativ können Sie die Beitrags-URL hier einfügen.",
+   "detailed": "Detailansicht"
+},
+"switch": "Schalter",
+"_switch": {
+   "name": "Variablenname",
+   "text": "Titel",
+   "default": "Standardwert"
+},
+"counter": "Zähler",
+"_counter": {
+   "name": "Variablenname",
+   "text": "Titel",
+   "inc": "Schritt"
+},
+"_button": {
+   "text": "Titel",
+   "colored": "Farbig",
+   "action": "Verhalten bei Knopfdruck",
+   "_action": {
+      "dialog": "Dialog anzeigen",
+      "_dialog": {
+         "content": "Inhalt"
+      },
+      "resetRandom": "Zufallsgenerator zurücksetzen",
+      "pushEvent": "Ereignis senden",
+      "_pushEvent": {
+         "event": "Ereignisname",
+         "message": "Nachricht bei Aktivierung",
+         "variable": "Zu sendende Variable",
+         "no-variable": "Keine"
+      },
+      "callAiScript": "AiScript aufrufen",
+      "_callAiScript": {
+         "functionName": "Funktionsname"
+      }
+   }
+},
+"radioButton": "Auswahl",
+"_radioButton": {
+   "name": "Variablenname",
+   "title": "Titel",
+   "values": "Liste der Auswahlmöglichkeiten, getrennt durch Zeilenumbrüche",
+   "default": "Standardwert"
+}
+},
+"script": {
+"categories": {
+   "flow": "Flusssteuerung",
+   "logical": "Logische Operation",
+   "operation": "Berechnung",
+   "comparison": "Vergleich",
+   "random": "Zufall",
+   "value": "Werte",
+   "fn": "Funktionen",
+   "text": "Textoperationen",
+   "convert": "Umwandlungen",
+   "list": "Listen"
+},
+"blocks": {
+   "text": "Text",
+   "multiLineText": "Text (mehrzeilig)",
+   "textList": "Textliste",
+   "_textList": {
+      "info": "Trennen Sie jeden Eintrag mit einem Zeilenumbruch"
+   },
+   "strLen": "Textlänge",
+   "_strLen": {
+      "arg1": "Text"
+   },
+   "strPick": "Zeichenkette extrahieren",
+   "_strPick": {
+      "arg1": "Text",
+      "arg2": "Position der Zeichenkette"
+   },
+   "strReplace": "Ersetzungszeichenkette",
+   "_strReplace": {
+      "arg1": "Text",
+      "arg2": "Zu ersetzender Text",
+      "arg3": "Ersetzen durch"
+   },
+   "strReverse": "Text umdrehen",
+   "_strReverse": {
+      "arg1": "Text"
+   },
+   "join": "Textverknüpfung",
+   "_join": {
+      "arg1": "Listen",
+      "arg2": "Trennzeichen"
+   },
+   "add": "Addieren",
+   "_add": {
+      "arg1": "A",
+      "arg2": "B"
+   },
+   "subtract": "Subtrahieren",
+   "_subtract": {
+      "arg1": "A",
+      "arg2": "B"
+   },
+   "multiply": "Multiplizieren",
+   "_multiply": {
+      "arg1": "A",
+      "arg2": "B"
+   },
+   "divide": "Dividieren",
+   "_divide": {
+      "arg1": "A",
+      "arg2": "B"
+   },
+   "mod": "Rest",
+   "_mod": {
+      "arg1": "A",
+      "arg2": "B"
+   },
+   "round": "Runden",
+   "_round": {
+      "arg1": "Zahl"
+   },
+   "eq": "A und B sind gleich",
+   "_eq": {
+      "arg1": "A",
+      "arg2": "B"
+   },
+   "notEq": "A und B sind unterschiedlich",
+   "_notEq": {
+      "arg1": "A",
+      "arg2": "B"
+   },
+   "and": "A UND B",
+   "_and": {
+      "arg1": "A",
+      "arg2": "B"
+   },
+   "or": "A ODER B",
+   "_or": {
+      "arg1": "A",
+      "arg2": "B"
+   },
+   "lt": "< A ist kleiner als B",
+   "_lt": {
+      "arg1": "A",
+      "arg2": "B"
+   },
+   "gt": "> A ist größer als B",
+   "_gt": {
+      "arg1": "A",
+      "arg2": "B"
+   },
+   "ltEq": "<= A ist kleiner oder gleich B",
+   "_ltEq": {
+      "arg1": "A",
+      "arg2": "B"
+   },
+   "gtEq": ">= A ist größer oder gleich B",
+   "_gtEq": {
+      "arg1": "A",
+      "arg2": "B"
+   },
+   "if": "Verzweigung",
+   "_if": {
+      "arg1": "Wenn",
+      "arg2": "Dann",
+      "arg3": "Sonst"
+   },
+   "not": "NICHT",
+   "_not": {
+      "arg1": "NICHT"
+   },
+   "random": "Zufall",
+   "_random": {
+      "arg1": "Wahrscheinlichkeit"
+   },
+   "rannum": "Zufallszahl",
+   "_rannum": {
+      "arg1": "Mindestwert",
+      "arg2": "Höchstwert"
            },
            "randomPick": "Randomly choose from list",
            "_randomPick": {
@@ -1805,101 +1876,101 @@
               "arg1": "Number of times to repeat",
               "arg2": "Action"
            }
-        },
-        "typeError": "Slot {slot} accepts values of type \"{expect}\", but the provided value is of type \"{actual}\"!",
-        "thereIsEmptySlot": "Slot {slot} is empty!",
+},
+        "typeError": "Slot {slot} akzeptiert Werte vom Typ \"{expect}\", aber der bereitgestellte Wert ist vom Typ \"{actual}\"!",
+        "thereIsEmptySlot": "Slot {slot} ist leer!",
         "types": {
            "string": "Text",
-           "number": "Number",
-           "boolean": "Flag",
-           "array": "List",
-           "stringArray": "Text list"
+           "number": "Zahl",
+           "boolean": "Markierung",
+           "array": "Liste",
+           "stringArray": "Textliste"
         },
-        "emptySlot": "Empty slot",
-        "enviromentVariables": "Environment variables",
-        "pageVariables": "Page variables",
-        "argVariables": "Input slots"
+        "emptySlot": "Leerer Slot",
+        "enviromentVariables": "Umgebungsvariablen",
+        "pageVariables": "Seitenvariablen",
+        "argVariables": "Eingabeslots"
      }
   },
   "_relayStatus": {
-     "requesting": "Pending",
-     "accepted": "Accepted",
-     "rejected": "Rejected"
+     "requesting": "Ausstehend",
+     "accepted": "Akzeptiert", 
+     "rejected": "Abgelehnt"
   },
   "_notification": {
-     "fileUploaded": "File successfully uploaded",
-     "youGotMention": "{name} mentioned you",
-     "youGotReply": "{name} replied to you",
-     "youGotQuote": "{name} quoted you",
-     "youRenoted": "Echoed by {name}",
-     "youGotPoll": "{name} voted on your poll",
-     "youGotMessagingMessageFromUser": "{name} sent you a chat message",
-     "youGotMessagingMessageFromGroup": "A chat message was sent to the {name} group",
-     "youWereFollowed": "followed you",
-     "youReceivedFollowRequest": "You've received a follow request",
-     "yourFollowRequestAccepted": "Your follow request was accepted",
-     "youWereInvitedToGroup": "{userName} invited you to a group",
-     "pollEnded": "Poll results have become available",
-     "emptyPushNotificationMessage": "Push notifications have been updated",
+     "fileUploaded": "Datei erfolgreich hochgeladen",
+     "youGotMention": "{name} hat dich erwähnt",
+     "youGotReply": "{name} hat dir geantwortet",
+     "youGotQuote": "{name} hat dich zitiert",
+     "youRenoted": "Von {name} weitergebellet",
+     "youGotPoll": "{name} hat an deiner Umfrage teilgenommen",
+     "youGotMessagingMessageFromUser": "{name} hat dir eine Chatnachricht gesendet",
+     "youGotMessagingMessageFromGroup": "Eine Chatnachricht wurde an die Gruppe {name} gesendet",
+     "youWereFollowed": "folgt dir",
+     "youReceivedFollowRequest": "Du hast eine Followanfrage erhalten",
+     "yourFollowRequestAccepted": "Deine Followanfrage wurde akzeptiert",
+     "youWereInvitedToGroup": "{userName} hat dich zu einer Gruppe eingeladen",
+     "pollEnded": "Umfrageergebnisse sind verfügbar",
+     "emptyPushNotificationMessage": "Push-Benachrichtigungen wurden aktualisiert",
      "_types": {
-        "all": "All",
-        "follow": "New followers",
-        "mention": "Mentions",
-        "reply": "Replies",
-        "renote": "Echos",
-        "quote": "Quotes",
-        "reaction": "Reactions",
-        "pollVote": "Votes on polls",
-        "pollEnded": "Polls ending",
-        "receiveFollowRequest": "Received follow requests",
-        "followRequestAccepted": "Accepted follow requests",
-        "groupInvited": "Group invitations",
-        "app": "Notifications from linked apps"
+        "all": "Alle",
+        "follow": "Neue Follower",
+        "mention": "Erwähnungen",
+        "reply": "Antworten",
+        "renote": "Weiterbellen",
+        "quote": "Zitate",
+        "reaction": "Reaktionen",
+        "pollVote": "Umfragestimmen",
+        "pollEnded": "Beendete Umfragen",
+        "receiveFollowRequest": "Erhaltene Followanfragen",
+        "followRequestAccepted": "Akzeptierte Followanfragen",
+        "groupInvited": "Gruppeneinladungen",
+        "app": "Benachrichtigungen von verknüpften Apps"
      },
      "_actions": {
-        "followBack": "followed you back",
-        "reply": "Reply",
-        "renote": "Echo"
+        "followBack": "folgt dir auch",
+        "reply": "Antworten",
+        "renote": "Weiterbellen"
      }
   },
   "_deck": {
-     "alwaysShowMainColumn": "Always show main column",
-     "columnAlign": "Align columns",
-     "addColumn": "Add column",
-     "configureColumn": "Column settings",
-     "swapLeft": "Swap with the left column",
-     "swapRight": "Swap with the right column",
-     "swapUp": "Swap with the above column",
-     "swapDown": "Swap with the below column",
-     "stackLeft": "Stack with the left column",
-     "popRight": "Pop column to the right",
-     "profile": "Profile",
-     "newProfile": "New profile",
-     "deleteProfile": "Delete profile",
-     "introduction": "Create the perfect interface for you by arranging columns freely!",
-     "introduction2": "Click on the + on the right of the screen to add new colums whenever you want.",
-     "widgetsIntroduction": "Please select \"Edit widgets\" in the column menu and add a widget.",
+     "alwaysShowMainColumn": "Hauptspalte immer anzeigen",
+     "columnAlign": "Spalten ausrichten",
+     "addColumn": "Spalte hinzufügen",
+     "configureColumn": "Spalteneinstellungen",
+     "swapLeft": "Mit linker Spalte tauschen",
+     "swapRight": "Mit rechter Spalte tauschen",
+     "swapUp": "Mit oberer Spalte tauschen",
+     "swapDown": "Mit unterer Spalte tauschen",
+     "stackLeft": "Mit linker Spalte stapeln",
+     "popRight": "Spalte nach rechts verschieben",
+     "profile": "Profil",
+     "newProfile": "Neues Profil",
+     "deleteProfile": "Profil löschen",
+     "introduction": "Erstelle deine perfekte Oberfläche, indem du die Spalten frei anordnest!",
+     "introduction2": "Klicke auf das + rechts auf dem Bildschirm, um jederzeit neue Spalten hinzuzufügen.",
+     "widgetsIntroduction": "Bitte wähle \"Widgets bearbeiten\" im Spaltenmenü und füge ein Widget hinzu.",
      "_columns": {
-        "main": "Main",
+        "main": "Hauptspalte",
         "widgets": "Widgets",
-        "notifications": "Notifications",
+        "notifications": "Benachrichtigungen",
         "tl": "Timeline",
-        "antenna": "Antennas",
-        "list": "List",
-        "mentions": "Mentions",
-        "direct": "Direct barks"
+        "antenna": "Antennen", 
+        "list": "Liste",
+        "mentions": "Erwähnungen",
+        "direct": "Direkte Beller"
      }
   },
   "ririca": {
     "name": "Barkle",
-    "description": "Bark it out on Barkle",
-    "term": "Agree Privacy Policy and Term of Uses ",
-    "termLink": "Link: Privacy Policy and Term of Uses",
-    "login": "login",
+    "description": "Bell es raus auf Barkle",
+    "term": "Datenschutzerklärung und Nutzungsbedingungen zustimmen",
+    "termLink": "Link: Datenschutzerklärung und Nutzungsbedingungen",
+    "login": "Anmelden",
     "instance": "Barkle",
-    "makeToken": "How to make access token (JP)",
-    "selectInstanceYourself": "Input instance url instead select one",
-    "accessToken": "AccessToken",
-    "howToCreateToken": "How to make access token (JP)"
+    "makeToken": "Wie man einen Zugriffstoken erstellt (JP)",
+    "selectInstanceYourself": "Instanz-URL selbst eingeben statt eine auszuwählen",
+    "accessToken": "Zugriffstoken",
+    "howToCreateToken": "Wie man einen Zugriffstoken erstellt (JP)"
   }
 }

@@ -11,6 +11,8 @@ jobs:
     
     steps:
     - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
     
     - name: Get changed files
       id: changed-files
@@ -24,40 +26,45 @@ jobs:
         
     - name: Validate translations
       id: validate
+      continue-on-error: true
       run: |
         node scripts/validate.js
-        echo "VALIDATION_RESULT=$(cat validation-results.json)" >> $GITHUB_ENV
+        echo "exit_code=$?" >> $GITHUB_ENV
         
-        - name: Add PR comment
-        if: always()
-        uses: actions/github-script@v6
-        with:
-          script: |
-            let validationResult;
-            try {
-              validationResult = JSON.parse(process.env.VALIDATION_RESULT);
-            } catch (error) {
-              validationResult = { valid: false, errors: ["Invalid JSON in validation results"] };
-            }
-      
-            let comment = '## Translation Validation Results\n\n';
-      
-            if (validationResult.valid) {
-              comment += '✅ All checks passed!\n';
-              comment += '- Valid JSON format\n';
-              comment += '- All required translations present\n';
-              comment += '- No extra translations\n';
-            } else {
-              comment += '❌ Validation failed:\n\n';
-              validationResult.errors.forEach(error => {
-                comment += `- ${error}\n`;
-              });
-              comment += '\nPlease fix these issues and update your PR.';
-            }
-      
-            await github.rest.issues.createComment({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: context.issue.number,
-              body: comment
+    - name: Add PR comment
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const fs = require('fs');
+          let validationResult;
+          try {
+            validationResult = JSON.parse(fs.readFileSync('validation-results.json', 'utf8'));
+          } catch (error) {
+            validationResult = { valid: false, errors: ["Could not read validation results"] };
+          }
+          
+          let comment = '## Translation Validation Results\n\n';
+          
+          if (validationResult.valid) {
+            comment += '✅ All checks passed!\n';
+            comment += '- Valid JSON format\n';
+            comment += '- All required translations present\n';
+            comment += '- No extra translations\n';
+          } else {
+            comment += '❌ Validation failed:\n\n';
+            validationResult.errors.forEach(error => {
+              comment += `- ${error}\n`;
             });
+            comment += '\nPlease fix these issues and update your PR.';
+          }
+          
+          await github.rest.issues.createComment({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: context.issue.number,
+            body: comment
+          });
+
+    - name: Exit with validation result
+      if: always()
+      run: exit ${{ env.exit_code }}

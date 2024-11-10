@@ -16,23 +16,8 @@ function validateTranslation(filePath, baseTranslation) {
             translation = JSON.parse(content);
             console.log(`✓ ${path.basename(filePath)} is valid JSON`);
         } catch (parseError) {
-            // Handle JSON parsing errors
-            const lines = content.split('\n');
-            let lineNo = 0;
-            let charNo = 0;
-            
-            for (let i = 0; i < parseError.pos; i++) {
-                if (content[i] === '\n') {
-                    lineNo++;
-                    charNo = 0;
-                } else {
-                    charNo++;
-                }
-            }
-            
             results.valid = false;
-            results.errors.push(`Invalid JSON at line ${lineNo + 1}, column ${charNo + 1}`);
-            results.errors.push(`Hint: Check for missing commas, quotes, or brackets near this location`);
+            results.errors.push(`Invalid JSON in ${path.basename(filePath)}: ${parseError.message}`);
             return false;
         }
         
@@ -57,7 +42,7 @@ function validateTranslation(filePath, baseTranslation) {
         return results.valid;
     } catch (error) {
         results.valid = false;
-        results.errors.push(`Error reading file ${filePath}: ${error.message}`);
+        results.errors.push(`Error reading file ${path.basename(filePath)}: ${error.message}`);
         return false;
     }
 }
@@ -79,44 +64,52 @@ async function main() {
         
         if (changedFiles.length === 0) {
             console.log('No translation files to validate');
-            process.exit(0);
-        }
-        
-        // Validate each file
-        changedFiles.forEach(file => {
-            const filePath = path.join(translationsDir, file);
-            if (fs.existsSync(filePath)) {
-                console.log(`\nValidating ${file}...`);
-                validateTranslation(filePath, baseTranslation);
-            } else {
-                results.valid = false;
-                results.errors.push(`File not found: ${file}`);
-            }
-        });
-        
-        // Save results
-        fs.writeFileSync(
-            path.join(__dirname, 'validation-results.json'), 
-            JSON.stringify(results, null, 2)
-        );
-        
-        if (!results.valid) {
-            console.error('\nValidation failed:');
-            results.errors.forEach(error => console.error(`❌ ${error}`));
-            process.exit(1);
+            results.valid = true;
+            results.errors = ['No translation files to validate'];
         } else {
-            console.log('\n✅ All validations passed!');
-            process.exit(0);
+            // Validate each file
+            changedFiles.forEach(file => {
+                const filePath = path.join(translationsDir, file);
+                if (fs.existsSync(filePath)) {
+                    console.log(`\nValidating ${file}...`);
+                    validateTranslation(filePath, baseTranslation);
+                } else {
+                    results.valid = false;
+                    results.errors.push(`File not found: ${file}`);
+                }
+            });
         }
         
     } catch (error) {
-        console.error(`\n❌ Validation script error: ${error.message}`);
-        process.exit(1);
+        results.valid = false;
+        results.errors.push(`Validation script error: ${error.message}`);
+    } finally {
+        // Always write results file
+        fs.writeFileSync(
+            path.join(__dirname, '..', 'validation-results.json'),
+            JSON.stringify(results, null, 2)
+        );
+        
+        // Log results
+        if (!results.valid) {
+            console.error('\nValidation failed:');
+            results.errors.forEach(error => console.error(`❌ ${error}`));
+        } else {
+            console.log('\n✅ All validations passed!');
+        }
+        
+        // Exit with appropriate code
+        process.exit(results.valid ? 0 : 1);
     }
 }
 
 // Run the script
 main().catch(error => {
-    console.error(`\n❌ Fatal error: ${error.message}`);
+    results.valid = false;
+    results.errors.push(`Fatal error: ${error.message}`);
+    fs.writeFileSync(
+        path.join(__dirname, '..', 'validation-results.json'),
+        JSON.stringify(results, null, 2)
+    );
     process.exit(1);
 });

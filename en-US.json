@@ -1504,7 +1504,7 @@
    "uploads5GB": "5GB uploads",
    "profileDecorations": "More profile decorations",
    "profileCSS": "Custom profile CSS",
-   "earlyAccess": "Early access",
+   "earlyAccess": "Early access features (Barkle Live)",
    "barklePlusBadge": "Barkle+ badge",
    "goToDecorations": "Go to decorations",
    "welcomeToBarklePlus": "Welcome to Barkle+!",
@@ -1517,7 +1517,7 @@
    "monthly": "Monthly",
    "yearly": "Yearly",
    "monthlyPrice": "$4.99 billed monthly",
-   "yearlyPrice": "$49.99 billed yearly",
+   "yearlyPrice": "$49.99 billed yearly (17% discount!)",
    "uploads5GBDescription": "Enjoy larger 5GB uploads, allowing you to upload longer videos and higher quality photos (Default 1GB)",
    "profileDecorationsDescription": "Customize your profile with more decorations like hats, expressions, and more",
    "profileCSSDescription": "Make your profile page truly yours by customizing the CSS of your profile",
@@ -1552,7 +1552,14 @@
    "trialSubscriptionRemoved": "Trial subscription removed",
    "invalidTrialDays": "Invalid trial days. Must be above 0",
    "alreadyStripeCustomer": "Already a Stripe Customer",
-   "userIsStripeCustomer": "This user is already a Stripe customer"
+   "userIsStripeCustomer": "This user is already a Stripe customer",
+   "miniBarklePlus": "Mini Barkle+",
+   "uploads1GB": "1GB uploads",
+   "someDecorations": "Some Barkle+ decorations",
+   "allDecorations": "All Barkle+ decorations",
+   "miniMonthlyPrice": "$0.99 billed monthly",
+   "miniYearlyPrice": "$9.99 billed yearly (17% discount!)",
+   "customCss": "Custom profile CSS"
   },
   "_exportOrImport": {
      "allNotes": "All barks",
@@ -1564,7 +1571,6 @@
      "excludeInactiveUsers": "Exclude inactive users"
   },
   "_charts": {
-     "federation": "Federation",
      "apRequest": "Requests",
      "usersIncDec": "Difference in the number of users",
      "usersTotal": "Total number of users",

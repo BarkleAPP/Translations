@@ -28,7 +28,7 @@ function validateTranslation(filePath, baseTranslation) {
         
         if (extraKeys.length > 0) {
             results.valid = false;
-            results.errors.push(`Extra keys that don't exist in en-US.json: ${extraKeys.join(', ')}`);
+            results.errors.push(`Extra keys that don't exist in enUS.json: ${extraKeys.join(', ')}`);
         }
         
         return results.valid;

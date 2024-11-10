@@ -1,20 +1,9 @@
 name: Validate Translations
 
 on:
-  # Run on PRs targeting main or master
   pull_request:
-    branches: [ main, master ]
     paths:
       - 'translations/**.json'
-  
-  # Run on direct pushes to main/master
-  push:
-    branches: [ main, master ]
-    paths:
-      - 'translations/**.json'
-  
-  # Allow manual trigger
-  workflow_dispatch:
 
 jobs:
   validate:
@@ -22,19 +11,11 @@ jobs:
     
     steps:
     - uses: actions/checkout@v3
-      with:
-        fetch-depth: 0  # Fetch all history for all branches
     
     - name: Get changed files
       id: changed-files
       run: |
-        if [ ${{ github.event_name }} == 'pull_request' ]; then
-          # For PRs, check files changed in the PR
-          echo "CHANGED_FILES=$(git diff --name-only origin/${{ github.base_ref }} ${{ github.sha }} | grep '^translations/.*\.json$' | cut -d'/' -f2 | tr '\n' ',' | sed 's/,$//')" >> $GITHUB_ENV
-        else
-          # For pushes, check files changed in the commit
-          echo "CHANGED_FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '^translations/.*\.json$' | cut -d'/' -f2 | tr '\n' ',' | sed 's/,$//')" >> $GITHUB_ENV
-        fi
+        echo "CHANGED_FILES=$(git diff --name-only origin/${{ github.base_ref }} ${{ github.sha }} | grep '^translations/.*\.json$' | cut -d'/' -f2 | tr '\n' ',' | sed 's/,$//')" >> $GITHUB_ENV
     
     - name: Setup Node.js
       uses: actions/setup-node@v3
@@ -42,47 +23,41 @@ jobs:
         node-version: '18'
         
     - name: Validate translations
-      run: node scripts/validate.js
-      
-    - name: Add PR comment
-      if: github.event_name == 'pull_request' && always()
-      uses: actions/github-script@v6
-      with:
-        script: |
-          const fs = require('fs');
-          const results = JSON.parse(fs.readFileSync('validation-results.json', 'utf8'));
-          
-          let comment = '## Translation Validation Results\n\n';
-          
-          if (results.valid) {
-            comment += '✅ All checks passed!\n';
-            comment += '- Valid JSON format\n';
-            comment += '- All required translations present\n';
-            comment += '- No extra translations\n';
-          } else {
-            comment += '❌ Validation failed:\n\n';
-            results.errors.forEach(error => {
-              comment += `- ${error}\n`;
-            });
-            comment += '\nPlease fix these issues and update your PR.';
-          }
-          
-          await github.rest.issues.createComment({
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            issue_number: context.issue.number,
-            body: comment
-          });
-
-    - name: Check validation status
-      if: always()
+      id: validate
       run: |
-        if [ -f validation-results.json ]; then
-          if jq -e '.valid == false' validation-results.json > /dev/null; then
-            echo "Validation failed!"
-            exit 1
-          fi
-        else
-          echo "Validation results file not found!"
-          exit 1
-        fi
+        node scripts/validate.js
+        echo "VALIDATION_RESULT=$(cat validation-results.json)" >> $GITHUB_ENV
+        
+        - name: Add PR comment
+        if: always()
+        uses: actions/github-script@v6
+        with:
+          script: |
+            let validationResult;
+            try {
+              validationResult = JSON.parse(process.env.VALIDATION_RESULT);
+            } catch (error) {
+              validationResult = { valid: false, errors: ["Invalid JSON in validation results"] };
+            }
+      
+            let comment = '## Translation Validation Results\n\n';
+      
+            if (validationResult.valid) {
+              comment += '✅ All checks passed!\n';
+              comment += '- Valid JSON format\n';
+              comment += '- All required translations present\n';
+              comment += '- No extra translations\n';
+            } else {
+              comment += '❌ Validation failed:\n\n';
+              validationResult.errors.forEach(error => {
+                comment += `- ${error}\n`;
+              });
+              comment += '\nPlease fix these issues and update your PR.';
+            }
+      
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: comment
+            });

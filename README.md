@@ -56,6 +56,7 @@ Welcome to the official translation project for Barkle.chat! We're on a mission 
 3. **Testing**
    ```bash
    # Validate JSON structure
+   npm i
    npm run validate
    ```
 

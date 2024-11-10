@@ -26,10 +26,12 @@ jobs:
         
     - name: Validate translations
       id: validate
-      run: node scripts/validate.js
+      continue-on-error: true
+      run: |
+        node scripts/validate.js
+        echo "exit_code=$?" >> $GITHUB_ENV
         
     - name: Add PR comment
-      if: always()
       uses: actions/github-script@v6
       with:
         script: |
@@ -62,3 +64,7 @@ jobs:
             issue_number: context.issue.number,
             body: comment
           });
+
+    - name: Exit with validation result
+      if: always()
+      run: exit ${{ env.exit_code }}

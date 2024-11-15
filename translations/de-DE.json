@@ -993,7 +993,7 @@
    "bioSize": "Schriftgröße der Bio",
    "reset": "Zurücksetzen",
    "noCustomDecos": "Keine benutzerdefinierten Dekorationen",
-   "mplusOnly": "Nur für Mini Barkle+ und Barkle+"
+   "mplusOnly": "Nur für Mini Barkle+ und Barkle+",
    "_sensitiveMediaDetection": {
      "description": "Reduziert den Aufwand der Servermoderation durch automatische Erkennung von NSFW-Medien mittels maschinellen Lernens. Dies wird die Serverlast leicht erhöhen.",
      "sensitivity": "Erkennungsempfindlichkeit",

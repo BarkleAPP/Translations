@@ -42,7 +42,6 @@
    "authorizationUrl": "OAuth2 Authorization URL",
    "tokenUrl": "OAuth2 Token URL",
    "scope": "Scope",
-   "none": "None",
    "authCodeFlowExample": "Authorization Code Flow Example",
    "redirectUserTo": "Redirect the user to",
    "exchangeCodeForToken": "Exchange the code for a token",
@@ -1023,6 +1022,10 @@
    "enterMessage": "Enter a message",
    "failedToSend": "Failed to send",
    "liveSettings": "Live settings",
+   "authorizedApps": "Authorized apps",
+   "revoke": "Revoke",
+   "authorizedAt": "Authorized at",
+   "required": "Required",
    "_stream": {
       "createStream": "Create stream",
       "startStream": "Start stream",
@@ -1429,11 +1432,7 @@
       "read:user-groups": "View your user groups",
       "write:user-groups": "Edit or delete your user groups",
       "read:channels": "View your channels",
-      "write:channels": "Edit your channels",
-      "read:gallery": "View your gallery",
-      "write:gallery": "Edit your gallery",
-      "read:gallery-likes": "View your list of liked gallery posts",
-      "write:gallery-likes": "Edit your list of liked gallery posts"
+      "write:channels": "Edit your channels"
    },
    "_auth": {
       "shareAccess": "Would you like to authorize \"{name}\" to access this account?",
@@ -1616,6 +1615,7 @@
     "adFree": "Ad-free experience",
     "lessAds": "Less ads",
     "earlyAccessMunz": "Early access to revenue sharing (coming soon)",
+    "revokeAreYouSure": "Are you sure you want to revoke {x}?",
     "gift": {
       "giftSubscription": "Gift a Subscription",
       "giftDescription": "Give the gift of Barkle Plus to someone special. They'll receive all the premium features for the duration you choose.",
@@ -2126,18 +2126,5 @@
          "mentions": "Mentions",
          "direct": "Direct barks"
       }
-   },
-   "ririca": {
-     "name": "Barkle",
-     "description": "Bark it out on Barkle",
-     "term": "Agree Privacy Policy and Term of Uses ",
-     "termLink": "Link: Privacy Policy and Term of Uses",
-     "login": "login",
-     "instance": "Barkle",
-     "makeToken": "How to make access token (JP)",
-     "selectInstanceYourself": "Input instance url instead select one",
-     "accessToken": "AccessToken",
-     "howToCreateToken": "How to make access token (JP)"
+   }
 }
-}
- 
